@@ -1,0 +1,44 @@
+.box {
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    animation-name: rotate;
+    animation-duration: 0.7s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    animation-direction: reverse;
+    animation-play-state: paused;
+}
+
+.demo {
+    border-top: 100px solid #ccc;
+    height: 300px;
+    width: 450px;
+}
+
+@keyframes grow {
+    0% {font-size: 0;}
+    100% { font-size: 40px; }
+}
+
+.demo:hover .grows {
+    animation-name: grow;
+    animation-duration: 3s;
+}
+
+.demo:hover .growsandstays {
+    animation-name: grow;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
